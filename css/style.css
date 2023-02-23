@@ -1,0 +1,202 @@
+:root {
+  --main: rgb(237, 237, 237);  
+  --pink: rgb(181, 137, 214);
+  --blue: rgb(58, 34, 210);
+  --purp: rgb(106, 53, 156);
+  --tg: rgb(0,0,0);
+  --color-links: #d9a5b3;
+}
+
+@keyframes float {
+  from, to {
+    transform: translateY(-0%);
+  }
+  
+  50% {    
+    transform: translateY(-3%);
+  }
+}
+
+@keyframes background-pan {
+  from {
+    background-position: 1000% center;
+  }
+  
+  to {
+    background-position: 0% center;
+  }
+}
+
+body {
+  height: 100vh;
+  background-color: black;
+  margin: 0rem;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+}
+@font-face {
+  font-family: 'Shegisha';
+  src: 
+        url('../fonts/Shegisha.woff2') format('woff2'),
+        url('../fonts/Shegisha.otf') format('otf'),
+        url('../fonts/Shegisha.ttf') format('truetype'); 
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'MondayMood';
+  src: 
+      url('../fonts/MondayMood.otf') format('otf'),
+      url('../fonts/MondayMood.ttf') format('ttf');
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Navycula';
+  src: 
+      url('../fonts/NavyculaFont-Bold.otf') format('otf'),
+      url('../fonts/NavyculaFont-Bold.ttf') format('ttf');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Royce';
+  src: url('../fonts/Royce-Black.otf') format('otf');
+  src: url('../fonts/Royce-Bold.otf') format('otf'),
+     url('../fonts/Royce-Extrabold.otf') format('otf'),
+     url('../fonts/Royce-Medium.otf') format('otf'),
+     url('../fonts/Royce-Regular.otf') format('otf');
+  font-style: normal;
+  font-weight: normal;
+}
+
+.line {
+  display: flex;
+  justify-content: space-between;
+}
+.line:not(:last-child){
+  margin-bottom: 1rem;
+}
+.letterspacing{
+  letter-spacing: 0.35rem;
+}
+.word {
+  color: var(--main);
+  font-size: clamp(2rem, 8vw, 11.5rem);
+  font-family: "Royce";
+  margin: 0rem;
+  text-transform: uppercase;
+  transition: .7s;
+  cursor: pointer;
+  font-weight: 500;
+  text-shadow: 0px 1px 0px var(--purp), 0px 3px 0px var(--purp), 0px 4px 0px var(--purp),
+		0px 5px 0px var(--purp), 0px 6px 0px var(--purp), 0px 7px 0px var(--purp),
+		0px 8px 0px var(--purp), 0px 9px 5px var(--purp);
+}
+
+a {
+  text-decoration: none;
+}
+
+#text:has(.fancy:hover) .word:not(.fancy:hover) {
+  filter: brightness(0.3) blur(3.5px);
+}
+
+.fancy span {
+  display: inline-block;
+}
+.text:hover:hover > :not(:hover){
+  filter:blur(10px)
+}
+.fancy > .outer {
+  transition: transform 350ms ease;
+}
+.word:hover{
+  transform: scale(1.08);
+}
+.fancy:hover > .outer {
+  transition-duration: 800ms;
+}
+
+.fancy:hover > .outer > .inner {
+  animation: float 5s ease infinite;
+}
+
+.fancy:hover > .outer > .inner > .letter {
+  background: linear-gradient(
+    to right,
+    var(--pink),
+    var(--pink),
+    var(--pink)
+  );
+  background-size: 1000%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: background-pan 150s linear infinite;
+}
+
+
+.fancy:hover > .outer:nth-child(1) {
+  transform: translate(-30%, -25%) rotate(-8deg);
+}
+
+.fancy:hover > .outer:nth-child(2) {
+  transform: translate(-25%, -10%) rotate(4deg);
+}
+
+.fancy:hover > .outer:nth-child(3) {
+  transform: translate(-10%, -25%) rotate(-6deg);
+}
+
+.fancy:hover > .outer:nth-child(4) {
+  transform: translate(0%, -8%) rotate(-8deg);
+}
+
+.fancy:hover > .outer:nth-child(5) {
+  transform: translate(0%, 10%) rotate(5deg);
+}
+
+.fancy:hover > .outer:nth-child(6) {
+  transform: translate(0%, -10%) rotate(-3deg);
+}
+
+.fancy:hover > .outer:nth-child(7) {
+  transform: translate(0%, 15%) rotate(-5deg);
+}
+
+.fancy:hover > .outer:nth-child(8) {
+  transform: translate(0%, -15%) rotate(10deg);
+}
+
+.fancy:hover > .outer:nth-child(9) {
+  transform: translate(-20%, 30%) rotate(8deg);
+}
+
+.fancy:hover > .outer:nth-child(10) {
+  transform: translate(0%, 5%) rotate(-6deg);
+}
+
+.fancy:hover > .outer:nth-child(11) {
+  transform: translate(20%, 10%) rotate(-3deg);
+}
+
+.fancy:hover > .outer:nth-child(12) {
+  transform: translate(40%, -10%) rotate(-10deg);
+}
+#link, #channel-link{
+  color: rgb(211, 221, 253);
+  position: relative;
+	top: -10px;
+  transition: .125s;
+  transform: scale(1);
+  font-family: "Royce";
+  text-shadow: 0px 1px 0px #89ABE3FF, 0px 2px 0px #89ABE3FF, 0px 3px 0px #89ABE3FF,
+		0px 4px 0px #89ABE3FF, 0px 5px 0px #89ABE3FF, 0px 6px 0px #89ABE3FF,
+		0px 7px 0px #89ABE3FF, 0px 8px 5px #89ABE3FF;
+}
+
+#link:hover,#channel-link:hover{
+  top: 0px;
+  text-shadow: 0px 0px 0px #89ABE3FF, 0px 0px 0px #89ABE3FF, 0px 0px 0px #89ABE3FF,
+		0px 0px 0px #89ABE3FF, 0px 0px 0px #89ABE3FF, 0px 0px 0px #89ABE3FF,
+		0px 0px 0px #89ABE3FF, 0px 0px 0px #89ABE3FF;
+}
