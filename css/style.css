@@ -60,7 +60,6 @@ body {
 
 @font-face {
   font-family: 'Royce';
-  src: url('../fonts/Royce-Black.otf') format('otf');
   src: url('../fonts/Royce-Bold.otf') format('otf'),
      url('../fonts/Royce-Extrabold.otf') format('otf'),
      url('../fonts/Royce-Medium.otf') format('otf'),
