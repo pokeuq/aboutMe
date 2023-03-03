@@ -77,7 +77,7 @@ body {
   margin-bottom: 1rem;
 }
 .letterspacing{
-  letter-spacing: 0.35rem;
+  letter-spacing: 0.05rem;
 }
 .word {
   color: var(--main);
@@ -101,7 +101,9 @@ a {
 #text:has(.fancy:hover) .word:not(.fancy:hover) {
   filter: brightness(0.3) blur(3.5px);
 }
-
+.text{
+  padding: 2rem;
+}
 .fancy span {
   display: inline-block;
 }
