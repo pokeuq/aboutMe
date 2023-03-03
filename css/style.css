@@ -35,7 +35,7 @@ body {
   display: grid;
   place-items: center;
 }
-/* @font-face {
+@font-face {
   font-family: 'Shegisha';
   src: 
         url('../fonts/Shegisha.woff2') format('woff2'),
@@ -67,7 +67,7 @@ body {
   font-family: 'Royce';
   src: url('../fonts/Royce-Bold.otf') format('otf');
   font-weight: bold;
-} */
+}
 
 .line {
   display: flex;
@@ -83,7 +83,7 @@ body {
   color: var(--main);
   font-size: clamp(2rem, 8vw, 12rem);
   font-weight: bold;
-  font-family: 'Gajraj One', cursive;
+  font-family: 'Rubik Mono One', sans-serif;
   margin: 0rem;
   text-transform: uppercase;
   transition: .7s;
