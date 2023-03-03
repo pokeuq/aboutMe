@@ -83,7 +83,7 @@ body {
   color: var(--main);
   font-size: clamp(2rem, 8vw, 12rem);
   font-weight: bold;
-  font-family: "Royce";
+  font-family: 'Gajraj One', cursive;
   margin: 0rem;
   text-transform: uppercase;
   transition: .7s;
@@ -185,12 +185,14 @@ a {
 }
 
 #link, #channel-link{
+  font-size: clamp(2rem, 7.5vw, 11rem);
   color: var(--main);
   position: relative;
 	top: -10px;
   transition:  .125s;
   transform: scale(1);
-  font-family: "Royce";
+  font-family: 'Climate Crisis', cursive;
+  letter-spacing: 0.02em;
   text-shadow: 0px 1px 0px #89ABE3FF, 0px 2px 0px #89ABE3FF, 0px 3px 0px #89ABE3FF,
 		0px 4px 0px #89ABE3FF, 0px 5px 0px #89ABE3FF, 0px 6px 0px #89ABE3FF,
 		0px 7px 0px #89ABE3FF, 0px 8px 5px #89ABE3FF;
@@ -203,3 +205,41 @@ a {
 		0px 0px 0px #89ABE3FF, 0px 0px 0px #89ABE3FF;
 }
 
+@media screen and (min-width: 768px){
+  .word {
+    text-shadow: 0px 1px 0px var(--purp), 0px 3px 0px var(--purp), 0px 4px 0px var(--purp),
+      0px 5px 0px var(--purp), 0px 6px 0px var(--purp), 0px 7px 0px var(--purp),
+      0px 8px 0px var(--purp), 0px 9px 5px var(--purp);
+  }
+  #link, #channel-link{
+  text-shadow: 0px 1px 0px #89ABE3FF, 0px 2px 0px #89ABE3FF, 0px 3px 0px #89ABE3FF,
+		0px 4px 0px #89ABE3FF, 0px 5px 0px #89ABE3FF, 0px 6px 0px #89ABE3FF,
+		0px 7px 0px #89ABE3FF, 0px 8px 5px #89ABE3FF;
+}
+}
+
+@media screen and (max-width: 768px){
+  .word {
+    text-shadow: 0px 1px 0px var(--purp), 0px 1px 0px var(--purp), 0px 2px 0px var(--purp),
+      0px 3px 0px var(--purp), 0px 4px 0px var(--purp), 0px 5px 0px var(--purp),
+      0px 6px 0px var(--purp), 0px 7px 3px var(--purp);
+  }
+  #link, #channel-link{
+  text-shadow: 0px 1px 0px #89ABE3FF, 0px 1px 0px #89ABE3FF, 0px 2px 0px #89ABE3FF,
+		0px 3px 0px #89ABE3FF, 0px 4px 0px #89ABE3FF, 0px 5px 0px #89ABE3FF,
+		0px 6px 0px #89ABE3FF, 0px 7px 3px #89ABE3FF;
+}
+}
+
+@media screen and (max-width: 768px){
+  .word {
+    text-shadow: 0px 1px 0px var(--purp), 0px 1px 0px var(--purp), 0px 2px 0px var(--purp),
+      0px 2px 0px var(--purp), 0px 2px 0px var(--purp), 0px 3px 0px var(--purp),
+      0px 3px 0px var(--purp), 0px 4px 1px var(--purp);
+  }
+  #link, #channel-link{
+  text-shadow: 0px 1px 0px #89ABE3FF, 0px 1px 0px #89ABE3FF, 0px 2px 0px #89ABE3FF,
+		0px 2px 0px #89ABE3FF, 0px 2px 0px #89ABE3FF, 0px 3px 0px #89ABE3FF,
+		0px 3px 0px #89ABE3FF, 0px 4px 1px #89ABE3FF;
+}
+}
