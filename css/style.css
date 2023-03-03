@@ -60,12 +60,13 @@ body {
 
 @font-face {
   font-family: 'Royce';
-  src: url('../fonts/Royce-Bold.otf') format('otf'),
-     url('../fonts/Royce-Extrabold.otf') format('otf'),
-     url('../fonts/Royce-Medium.otf') format('otf'),
-     url('../fonts/Royce-Regular.otf') format('otf');
-  font-style: normal;
+  src: url('../fonts/Royce-Regular.otf') format('otf');
   font-weight: normal;
+}
+@font-face {
+  font-family: 'Royce';
+  src: url('../fonts/Royce-Bold.otf') format('otf');
+  font-weight: bold;
 }
 
 .line {
@@ -80,7 +81,8 @@ body {
 }
 .word {
   color: var(--main);
-  font-size: clamp(2rem, 8vw, 11.5rem);
+  font-size: clamp(2rem, 8vw, 12rem);
+  font-weight: bold;
   font-family: "Royce";
   margin: 0rem;
   text-transform: uppercase;
@@ -181,11 +183,12 @@ a {
 .fancy:hover > .outer:nth-child(12) {
   transform: translate(40%, -10%) rotate(-10deg);
 }
+
 #link, #channel-link{
-  color: rgb(211, 221, 253);
+  color: var(--main);
   position: relative;
 	top: -10px;
-  transition: .125s;
+  transition:  .125s;
   transform: scale(1);
   font-family: "Royce";
   text-shadow: 0px 1px 0px #89ABE3FF, 0px 2px 0px #89ABE3FF, 0px 3px 0px #89ABE3FF,
