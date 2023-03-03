@@ -35,7 +35,7 @@ body {
   display: grid;
   place-items: center;
 }
-@font-face {
+/* @font-face {
   font-family: 'Shegisha';
   src: 
         url('../fonts/Shegisha.woff2') format('woff2'),
@@ -67,7 +67,7 @@ body {
   font-family: 'Royce';
   src: url('../fonts/Royce-Bold.otf') format('otf');
   font-weight: bold;
-}
+} */
 
 .line {
   display: flex;
