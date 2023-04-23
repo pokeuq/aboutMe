@@ -3,6 +3,7 @@
   --pink: rgb(181, 137, 214);
   --blue: rgb(58, 34, 210);
   --purp: rgb(106, 53, 156);
+  --lite-purp: rgb(128, 78, 176);
   --tg: rgb(0,0,0);
   --color-links: #d9a5b3;
 }
@@ -133,7 +134,7 @@ a {
   );
   background-size: 1000%;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: var(--lite-purp);
   animation: background-pan 150s linear infinite;
 }
 
